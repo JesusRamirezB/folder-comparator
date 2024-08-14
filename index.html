@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Comparator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Folder Comparator</h1>
+        <form id="compareForm">
+            <label for="sourceFolder">Source Folder:</label>
+            <input type="file" id="sourceFolder" webkitdirectory directory multiple>
+
+            <label for="destinationFolder">Destination Folder:</label>
+            <input type="file" id="destinationFolder" webkitdirectory directory multiple>
+
+            <button type="button" onclick="compareFolders()">Compare Folders</button>
+        </form>
+        <div id="status"></div>
+        <div id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
